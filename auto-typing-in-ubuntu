@@ -1,0 +1,5 @@
+sudo apt update
+sudo apt install bash-completion -y
+type _init_completion
+source /usr/share/bash-completion/bash_completion
+source <(kubectl completion bash)
