@@ -3,3 +3,7 @@ sudo apt install bash-completion -y
 type _init_completion
 source /usr/share/bash-completion/bash_completion
 source <(kubectl completion bash)
+
+
+sudo apt install bash-completion -y && echo "if [ -f /etc/bash_completion ]; then . /etc/bash_completion; fi" >> ~/.bashrc && source ~/.bashrc
+echo 'source <(kops completion bash)' >> ~/.bashrc && source ~/.bashrc
